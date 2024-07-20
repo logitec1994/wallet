@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-
-{% block title %}Your Wallet{% endblock %}
-
-{% block content %}
-    <h1>Wallet for {{ user.username }}</h1>
-    <p>Wallet Address: {{ user.wallet_address }}</p>
-    <a href="{{ url_for('main.logout') }}">Logout</a>
-{% endblock %}
